@@ -1,68 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#080b18">
-  <meta name="description" content="Nezora — a fresh space for bold ideas and digital experiences.">
-  <title>Nezora — Imagine What's Next</title>
-  <style>
-    :root{--bg:#080b18;--panel:rgba(255,255,255,.065);--line:rgba(255,255,255,.12);--text:#f7f8ff;--muted:#a7aec4;--accent:#9b8cff;--cyan:#65e5df}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 75% 5%,#29215b 0,transparent 35%),radial-gradient(ellipse at 5% 55%,#103b49 0,transparent 32%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;min-height:100vh}
-    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
-    nav{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.08)}
-    .brand{font-size:23px;font-weight:850;letter-spacing:-1.2px}.brand span{color:var(--cyan)}.navlinks{display:flex;gap:30px;color:#c3c8d8;font-size:14px}.navlinks a:hover{color:white}
-    .navbtn,.primary{border:0;border-radius:999px;padding:12px 19px;background:linear-gradient(110deg,var(--accent),#6e9cff);color:white;font-weight:750;cursor:pointer;box-shadow:0 8px 28px #8171ff35}
-    .hero{padding:105px 0 90px;display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:55px}
-    .eyebrow{display:inline-flex;align-items:center;gap:9px;padding:8px 13px;border:1px solid var(--line);border-radius:99px;background:var(--panel);color:#d8d4ff;font-size:12px;letter-spacing:1.3px;text-transform:uppercase}
-    .dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 13px var(--cyan)}
-    h1{font-size:clamp(48px,7vw,82px);line-height:.99;letter-spacing:-5px;margin:25px 0 22px}h1 em{font-style:normal;background:linear-gradient(100deg,#b7aaff,#69e8e0);background-clip:text;color:transparent}
-    .lead{font-size:17px;line-height:1.8;color:var(--muted);max-width:520px}.actions{display:flex;align-items:center;gap:22px;margin-top:32px}.textlink{color:#d9d5ff;font-weight:650;font-size:14px}.textlink:hover{color:var(--cyan)}
-    .visual{min-height:390px;position:relative;display:grid;place-items:center}.orb{width:min(340px,75vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 32% 28%,#e0d9ff 0,#9e8cff 13%,#5549a6 38%,#171d43 68%,#0b1024 75%);box-shadow:inset -22px -25px 55px #050817,0 0 100px #8a79ff45;position:relative}
-    .orb:before,.orb:after{content:"";position:absolute;border:1px solid #c7c1ff65;border-radius:50%;inset:-25px;transform:rotate(-25deg) scaleY(.38)}.orb:after{inset:-55px;transform:rotate(38deg) scaleY(.3);border-color:#65e5df55}
-    .float{position:absolute;padding:15px 18px;border:1px solid var(--line);background:#171a31c9;backdrop-filter:blur(18px);border-radius:16px;box-shadow:0 20px 60px #0005;font-size:13px;color:#e7e8f5}.float strong{display:block;font-size:18px;margin-bottom:3px}.f1{top:48px;left:0}.f2{right:0;bottom:55px}
-    .section{padding:38px 0 90px}.sectionhead{text-align:center;margin-bottom:35px}.sectionhead h2{font-size:34px;letter-spacing:-1.5px;margin:0 0 10px}.sectionhead p{color:var(--muted);margin:0}
-    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{padding:25px;border:1px solid var(--line);background:var(--panel);border-radius:22px;min-height:190px;transition:.25s}.card:hover{transform:translateY(-5px);border-color:#9b8cff80;background:#ffffff10}.ico{width:42px;height:42px;display:grid;place-items:center;border-radius:13px;background:#9b8cff20;color:#c9c0ff;font-size:20px}.card h3{margin:20px 0 8px;font-size:17px}.card p{margin:0;color:var(--muted);font-size:14px;line-height:1.7}
-    .cta{margin:0 0 75px;padding:42px;border:1px solid var(--line);border-radius:26px;background:linear-gradient(115deg,#9b8cff20,#65e5df10);display:flex;align-items:center;justify-content:space-between;gap:20px}.cta h2{font-size:27px;letter-spacing:-1px;margin:0 0 8px}.cta p{color:var(--muted);margin:0}
-    footer{border-top:1px solid rgba(255,255,255,.08);padding:25px 0;color:#858da6;font-size:13px;display:flex;justify-content:space-between;gap:15px}
-    @media(max-width:760px){.wrap{width:min(100% - 32px,560px)}nav{height:70px}.navlinks{display:none}.hero{padding:70px 0 45px;grid-template-columns:1fr;gap:12px}h1{letter-spacing:-3px}.visual{min-height:330px}.orb{width:245px}.f1{left:2px;top:25px}.f2{right:0;bottom:25px}.cards{grid-template-columns:1fr}.card{min-height:0}.section{padding-bottom:55px}.cta{padding:27px;align-items:flex-start;flex-direction:column}.cta h2{font-size:24px}footer{flex-direction:column}}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050914">
+<meta name="description" content="SONIC — ideas into impact. A new digital experience.">
+<title>SONIC — Beyond The Ordinary</title>
+<style>
+:root{--bg:#050914;--panel:rgba(15,25,43,.72);--line:rgba(142,190,255,.17);--white:#f4f8ff;--muted:#9baac1;--cyan:#59e4f5;--blue:#6688ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:hidden}body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse at 78% 15%,#173c6555,transparent 35%),radial-gradient(ellipse at 8% 65%,#064f6250,transparent 32%);z-index:-1}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 44px));margin:auto}
+header{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff12}.logo{font-size:25px;font-weight:900;letter-spacing:3px}.logo b{color:var(--cyan)}.links{display:flex;gap:34px;color:#b5c3d8;font-size:14px}.links a:hover{color:var(--cyan)}.pill{display:inline-flex;align-items:center;justify-content:center;border:1px solid #72e8f577;background:linear-gradient(110deg,#50d9ed,#6b91ff);color:#04101b;font-weight:800;padding:13px 20px;border-radius:999px;box-shadow:0 8px 35px #39c9e533;transition:.2s}.pill:hover{transform:translateY(-2px);box-shadow:0 12px 42px #39c9e555}
+.hero{min-height:670px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:35px;padding:75px 0 85px}.tag{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);background:#10203588;border-radius:99px;padding:9px 14px;color:#b8eefa;font-size:11px;letter-spacing:2px;text-transform:uppercase}.pulse{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 14px var(--cyan)}h1{font-size:clamp(56px,8vw,100px);line-height:.91;letter-spacing:-6px;margin:27px 0 25px;font-weight:850}h1 span{display:block;background:linear-gradient(100deg,#fff 5%,#8beafa 48%,#8096ff 90%);background-clip:text;color:transparent}.desc{max-width:490px;color:var(--muted);font-size:17px;line-height:1.8}.actions{display:flex;align-items:center;gap:25px;margin-top:32px}.plain{color:#c8d7e9;font-size:14px;font-weight:700}.plain:hover{color:var(--cyan)}
+.art{height:470px;position:relative;display:grid;place-items:center}.core{width:min(350px,72vw);aspect-ratio:1;border-radius:50%;position:relative;background:radial-gradient(circle at 33% 25%,#e7ffff 0,#9af5ff 5%,#42badb 18%,#24558e 42%,#101d42 67%,#070d1e 73%);box-shadow:inset -24px -30px 55px #020713,0 0 65px #35d5ed55,0 0 150px #4976ff35;animation:float 6s ease-in-out infinite}.core:before,.core:after{content:"";position:absolute;inset:-34px;border:1px solid #73eaff8a;border-radius:50%;transform:rotate(-28deg) scaleY(.34);box-shadow:0 0 22px #52dff433}.core:after{inset:-65px;transform:rotate(48deg) scaleY(.25);border-color:#8299ff77}.spark{position:absolute;width:8px;height:8px;border-radius:50%;background:#b8faff;box-shadow:0 0 20px 5px #43dff5;top:18%;right:17%}.floatbox{position:absolute;border:1px solid var(--line);background:#0c192bd9;backdrop-filter:blur(18px);padding:14px 17px;border-radius:15px;box-shadow:0 18px 50px #0006;font-size:12px;color:#aebfd3}.floatbox strong{display:block;color:white;font-size:17px;margin-bottom:4px}.one{left:0;top:65px}.two{right:0;bottom:62px}@keyframes float{50%{transform:translateY(-12px) rotate(3deg)}}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:20px;background:#0b1726a8;margin:0 auto 100px;max-width:850px;padding:25px 10px}.stat{text-align:center;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat strong{font-size:24px;display:block}.stat span{font-size:12px;color:var(--muted);letter-spacing:1px;text-transform:uppercase}
+.section{padding:25px 0 100px}.heading{text-align:center;margin-bottom:38px}.heading small{color:var(--cyan);letter-spacing:3px;font-size:11px;font-weight:800}.heading h2{font-size:clamp(30px,4vw,43px);letter-spacing:-2px;margin:12px 0}.heading p{color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{border:1px solid var(--line);background:linear-gradient(145deg,#12243aab,#091321b8);border-radius:20px;padding:27px;min-height:205px;transition:.25s}.card:hover{transform:translateY(-6px);border-color:#58dff577;box-shadow:0 18px 55px #0004}.icon{height:43px;width:43px;border-radius:13px;display:grid;place-items:center;background:#4dd9ef18;border:1px solid #4dd9ef35;color:var(--cyan);font-size:21px}.card h3{margin:21px 0 9px;font-size:18px}.card p{margin:0;color:var(--muted);font-size:14px;line-height:1.75}
+.banner{margin:0 0 80px;padding:45px;border-radius:25px;border:1px solid #66dff044;background:radial-gradient(ellipse at 85% 20%,#24618b66,transparent 45%),linear-gradient(110deg,#10283a,#10172c);display:flex;align-items:center;justify-content:space-between;gap:25px}.banner h2{font-size:30px;letter-spacing:-1.5px;margin:0 0 9px}.banner p{color:var(--muted);margin:0}
+footer{border-top:1px solid #ffffff12;padding:25px 0 32px;display:flex;justify-content:space-between;gap:15px;color:#8291a8;font-size:12px;letter-spacing:.3px}
+@media(max-width:760px){.wrap{width:calc(100% - 34px)}header{height:70px}.links{display:none}.hero{grid-template-columns:1fr;padding:70px 0 35px;gap:0;min-height:0}h1{letter-spacing:-4px}.desc{font-size:15px}.art{height:350px}.core{width:245px}.one{left:0;top:28px}.two{right:0;bottom:25px}.stats{margin-bottom:65px;padding:20px 4px}.stat strong{font-size:20px}.stat span{font-size:9px}.grid{grid-template-columns:1fr}.card{min-height:0}.section{padding-bottom:65px}.banner{padding:28px;align-items:flex-start;flex-direction:column}.banner h2{font-size:25px}footer{flex-direction:column}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
 </head>
 <body>
-  <header class="wrap">
-    <nav>
-      <a class="brand" href="#">NEZ<span>ORA</span>.</a>
-      <div class="navlinks"><a href="#home">Home</a><a href="#about">About</a><a href="#features">Explore</a></div>
-      <a class="navbtn" href="#about">Discover Nezora ↗</a>
-    </nav>
-  </header>
-  <main>
-    <section class="hero wrap" id="home">
-      <div>
-        <div class="eyebrow"><span class="dot"></span> A new digital beginning</div>
-        <h1>Imagine.<br><em>Create.</em><br>Go beyond.</h1>
-        <p class="lead">Welcome to Nezora — a space built for fresh ideas, thoughtful experiences and what comes next. This is just the beginning.</p>
-        <div class="actions"><a class="primary" href="#features">Explore the vision ↗</a><a class="textlink" href="#about">Learn more →</a></div>
-      </div>
-      <div class="visual" aria-label="Abstract glowing 3D orb">
-        <div class="orb"></div>
-        <div class="float f1"><strong>01 / Vision</strong>Think without limits</div>
-        <div class="float f2"><strong>∞ / Possibility</strong>Built for what's next</div>
-      </div>
-    </section>
-    <section class="section wrap" id="features">
-      <div class="sectionhead"><h2>A world of possibilities</h2><p>A flexible foundation for the ideas we'll build together.</p></div>
-      <div class="cards">
-        <article class="card"><div class="ico">✦</div><h3>Fresh thinking</h3><p>Bring bold ideas into focus with a clean, modern digital experience.</p></article>
-        <article class="card"><div class="ico">◈</div><h3>Made to evolve</h3><p>A simple starting point that can grow into a full platform over time.</p></article>
-        <article class="card"><div class="ico">↗</div><h3>Built for everyone</h3><p>Responsive layouts that feel right on phones, tablets and desktops.</p></article>
-      </div>
-    </section>
-    <section class="wrap" id="about">
-      <div class="cta"><div><h2>This is only the first chapter.</h2><p>Nezora is ready for its next big idea.</p></div><a class="primary" href="mailto:hello@nezora.example">Get in touch ↗</a></div>
-    </section>
-  </main>
-  <footer class="wrap"><span>© <span id="year"></span> Nezora. All rights reserved.</span><span>Designed for what's next.</span></footer>
-  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
-</body>
-</html>
+<header class="wrap"><a class="logo" href="#">SON<b>IC</b>.</a><nav class="links"><a href="#home">Home</a><a href="#vision">Vision</a><a href="#features">Features</a></nav><a class="pill" href="#vision">Explore SONIC ↗</a></header>
+<main>
+<section class="hero wrap" id="home"><div><div class="tag"><i class="pulse"></i> THE NEXT DIGITAL WAVE</div><h1>Think bold.<span>Move sonic.</span></h1><p class="desc">A fresh digital universe for curious minds and ambitious ideas. Discover a space where imagination meets technology — and possibilities keep expanding.</p><div class="actions"><a class="pill" href="#features">Discover more ↗</a><a class="plain" href="#vision">Our vision →</a></div></div><div class="art" aria-label="Abstract glowing energy sphere"><div class="core"><i class="spark"></i></div><div class="floatbox one"><strong>01 / CREATE</strong>Ideas start here</div><div class="floatbox two"><strong>∞ / POSSIBLE</strong>Beyond the expected</div></div></section>
+<div class="stats wrap"><div class="stat"><strong>01</strong><span>One vision</span></div><div class="stat"><strong>∞</strong><span>New possibilities</span></div><div class="stat"><strong>24/7</strong><span>Always evolving</span></div></div>
+<section class="section wrap" id="features"><div class="heading"><small>WHAT DRIVES US</small><h2>Built for what comes next.</h2><p>A strong foundation. Room to imagine. Freedom to create.</p></div><div class="grid"><article class="card"><div class="icon">✧</div><h3>Ideas without limits</h3><p>Turn curiosity into concepts and give ambitious thinking a place to grow.</p></article><article class="card"><div class="icon">◈</div><h3>Technology with purpose</h3><p>Explore thoughtful digital experiences designed around clarity and possibility.</p></article><article class="card"><div class="icon">↗</div><h3>Ready to evolve</h3><p>A flexible starting point that can grow into something bigger with every new idea.</p></article></div></section>
+<section class="wrap" id="vision"><div class="banner"><div><h2>The future isn't a destination.</h2><p>It's something we create, one idea at a time.</p></div><a class="pill" href="#home">Back to top ↑</a></div></section>
+</main>
+<footer class="wrap"><span>© <span id="year"></span> SONIC. All rights reserved.</span><span>IMAGINE MORE. GO BEYOND.</span></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>
