@@ -1,39 +1,49 @@
 # SONIC Universe
 
-A mobile-first digital playground: play mini games, use everyday tools, take quizzes and create ideas.
+A mobile-first, Aura-inspired digital playground to play, learn, create and use everyday browser utilities.
 
-## Structure
+## Main sections
 
-- `index.html` — main dashboard
-- `assets/css/style.css` — shared Aura-inspired dark/cyan theme
+- `index.html` — main dashboard with custom SVG icons and 3D folder-style cards
+- `assets/css/style.css` — shared dark/cyan 3D Aura theme
 - `assets/js/app.js` — shared browser helpers
-- `arcade/` — game directory
-  - `games/tictactoe/`
-  - `games/memory/`
-  - `games/number-guess/`
-- `tools/` — utilities
-  - `calculator/`
-  - `text-tools/`
-  - `password/`
-  - `qr/`
-  - `timer/`
-- `quiz/` — general knowledge quiz
-- `create/` — prompt and idea templates
+- `arcade/` — Tic-Tac-Toe, Memory Match and Number Guess
+- `tools/` — 17 browser utilities:
+  - Calculator
+  - Text Toolkit
+  - Password Generator
+  - QR Code Generator
+  - Focus Timer
+  - Percentage Calculator
+  - Unit Converter
+  - Date & Age Calculator
+  - Date Difference
+  - Stopwatch
+  - Random Picker
+  - JSON Formatter
+  - URL Encoder / Decoder
+  - Base64 Encoder / Decoder
+  - Color Picker
+  - Markdown Preview
+  - Word Counter
+- `quiz/` — 10-question general knowledge quiz
+- `create/` — prompt, caption, website and video idea templates
 - `community/` — local-only poll and suggestion demo
 - `about/` — project vision and roadmap
+- `sonic/` — earlier standalone SONIC demo (preserved)
 
 ## Deploy
 
-Deploy the repository root as a static site on Netlify, Vercel, or GitHub Pages. No build command is required.
+Deploy the repository root as a static site on Netlify, Vercel or GitHub Pages. No build command is required.
 
-## Important implementation notes
+## Important notes
 
 - Games and tools run in the visitor's browser.
-- Community votes and suggestions are stored in localStorage on that device only; they are not shared.
-- The QR generator uses a third-party QR image endpoint. Do not encode private information.
-- The calculator accepts only arithmetic characters, but avoid entering untrusted expressions.
-- No real authentication, cloud database, public chat, multiplayer or synced leaderboard is configured yet. Those require a secure backend and server-side validation. Never put private API keys in frontend files.
+- Community votes and suggestions are saved only in that visitor's browser; they are not shared publicly.
+- QR generation uses a third-party QR image service. Do not encode private information.
+- No real authentication, cloud database, public chat, multiplayer or synced leaderboard is configured yet.
+- Keep private API keys on a server, never in frontend files.
 
 ## Next backend phase
 
-Add managed authentication, database tables for profiles/scores/ideas, server-side validation, moderation and rate limits. Keep service-role secrets server-side only.
+Add secure authentication, database-backed profiles and scores, server-side validation, moderation and rate limits.
