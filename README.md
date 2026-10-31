@@ -8,7 +8,7 @@ A mobile-first, Aura-inspired digital playground to play, learn, create and use 
 - `assets/css/style.css` — shared dark/cyan 3D Aura theme
 - `assets/js/app.js` — shared browser helpers
 - `arcade/` — Tic-Tac-Toe, Memory Match and Number Guess
-- `tools/` — 17 browser utilities:
+- `tools/` — 17 standalone utilities plus `pro-studio/` with 10 advanced utilities (JSON workbench, regex tester, text diff, UUID, SHA-256, JWT inspector, timestamp converter, CSS gradient studio, contrast checker and CSV/JSON converter):
   - Calculator
   - Text Toolkit
   - Password Generator
