@@ -45,3 +45,22 @@ body{background:#241a12;color:var(--ink)}
 .gallery-note{max-width:760px;margin:28px auto 0;text-align:center;color:#c4b29a;font-size:10px;line-height:1.6}
 .gallery-grid figure.image-unavailable{display:none}
 @media(max-width:760px){.gallery-grid figure img{height:230px}.gallery-grid figcaption{font-size:11px;padding:10px}}
+
+/* Booking experience — Mehsana */
+.location-note{display:grid;gap:5px;margin-top:28px;padding:16px 18px;border-left:2px solid var(--gold);background:#3a2a1d;color:#f2e1c4;font-size:11px}
+.location-note span{color:#c4b29a;font-size:10px}
+.booking-form{background:#34261b;border-color:#6a5034;color:#f8ead2}
+.booking-form label{color:#ead8ba}
+.booking-form input,.booking-form select,.booking-form textarea{background:#241a12;color:#f8ead2;border-color:#6a5034}
+.booking-form input:focus,.booking-form select:focus,.booking-form textarea:focus{border-color:#d2ad70}
+.booking-form option{background:#241a12;color:#f8ead2}
+.booking-form [hidden]{display:none!important}
+.price-summary{border:1px solid #6a5034;padding:15px 16px;margin:20px 0}
+.price-summary>div{display:flex;justify-content:space-between;gap:12px;padding:6px 0;color:#c4b29a;font-size:11px}
+.price-summary b{color:#f8ead2}
+.price-summary .price-total{border-top:1px solid #6a5034;margin-top:8px;padding-top:13px;color:#f8ead2}
+.price-summary strong{font:600 21px "Playfair Display",Georgia,serif;color:#e2bf84}
+.form-message{color:#e2bf84;line-height:1.7}
+.booking-form .fine-print{color:#c4b29a}
+.booking-form .btn-dark{background:#d2ad70;color:#241a12}
+@media(max-width:760px){.booking-form{padding:22px 17px}.location-note{margin-top:22px}}
